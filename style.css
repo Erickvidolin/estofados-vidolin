@@ -1,0 +1,138 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    color: greenyellow;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5px;
+    gap: 5px;
+    
+}
+
+#cards div{
+    width: 95vw;
+    height: 150px;
+    margin: auto;
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid greenyellow;
+    box-shadow: 1px 1px 2px #adff2f;
+
+}
+
+
+
+.titulo{
+    color: greenyellow;
+    text-align: center; 
+}
+
+.titulo button{
+    border: 0;
+    border-radius: 5px;
+    width: 75vw;
+    height: 20px;
+    margin-top:5px ;
+    background-color: #25D366;
+    font-weight: bold;
+}
+
+
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(6, 45px) ;
+    margin: auto;
+    margin-top: px;
+    padding: 10px;
+    gap: 5px;
+    
+}
+
+#galeria div{
+    border-radius: 10px;
+    border: 2px solid greenyellow;
+}
+
+
+.d1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: black;
+    overflow: hidden;
+}
+.d2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: black;
+    overflow: hidden;
+}
+.d3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: black;
+    overflow: hidden;
+}
+.d4 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: black;
+    overflow: hidden;
+}
+.d5 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: black;
+    overflow: hidden;
+}
+.d6 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-color: black;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+footer{
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    color: #adff2f;
+}
