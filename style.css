@@ -9,6 +9,13 @@ body{
     background-color: black;
 }
 
+#section{
+    color: greenyellow;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 header{
     display: flex;
     width: 100vw;
@@ -17,13 +24,18 @@ header{
     color: greenyellow;
     align-items: center;
     justify-content: center;
+    
+}
+
+header img{
+    width: 50%;
 }
 
 #cards{
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 30px;
     gap: 5px;
     
 }
@@ -34,19 +46,46 @@ header{
     margin: auto;
     background-color: black;
     color: greenyellow;
-    text-align: center;
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid greenyellow;
     box-shadow: 1px 1px 2px #adff2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+.card-1{
+    background-image: url(img/belo-conceito-de-design-de-quarto-interior.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-2{
+    background-image: url(img/sala-de-estar-chique-moderna-e-luxuosa-com-estilo-estetico-em-tons-de-azul.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-3{
+    background-image: url(img/sedan-azul-esporte-estacionado-no-quintal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h2{
+    color: black;
 }
 
 
 
 .titulo{
     color: greenyellow;
-    text-align: center; 
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.titulo h1{
+    margin-top: 10px;
 }
 
 .titulo button{
@@ -57,6 +96,7 @@ header{
     margin-top:5px ;
     background-color: #25D366;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 
@@ -65,9 +105,9 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:repeat(6, 45px) ;
     margin: auto;
-    margin-top: px;
     padding: 10px;
     gap: 5px;
+    margin-top: 30px;
     
 }
 
@@ -131,8 +171,170 @@ img{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
     width: 100vw;
     height: 80px;
     background-color: black;
     color: #adff2f;
+    margin-top: 30px;
+}
+
+@media (min-width:760px) {
+
+    header img{
+        width: 30%;
+    }
+
+    #cards{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;        
+    }
+
+    #galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(6, 120px) ;        
+    }
+
+    .d1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d3 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d4 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d5 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d6 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    .titulo button{
+
+        height: 50px;     
+        
+    }
+
+ 
+    
+}
+
+@media (min-width:1020px) {
+
+    header img{
+        width: 20%;
+    }
+
+    #cards div{
+
+        height: 300px;
+    
+    }
+
+    #cards{
+        display: flex;
+        flex-direction: row;
+        padding: 5px;        
+    }
+
+    #galeria{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:repeat(4, 140px) ;        
+    }
+
+    .d1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d3 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d4 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d5 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: black;
+        overflow: hidden;
+    }
+    .d6 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    .titulo button{
+
+        height: 50px;     
+        
+    }
+
+ 
+    
 }
