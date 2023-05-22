@@ -29,6 +29,7 @@ header{
 
 header img{
     width: 50%;
+    margin-top: 30px;
 }
 
 #cards{
@@ -91,12 +92,13 @@ h2{
 .titulo button{
     border: 0;
     border-radius: 5px;
-    width: 75vw;
-    height: 20px;
+    width: 50vw;
+    height: 50px;
     margin-top:5px ;
     background-color: #25D366;
     font-weight: bold;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 
@@ -169,6 +171,17 @@ h2{
 img{
     max-width: 100%;
 }
+
+.titulo button:hover{
+    border: 1px solid green;
+    box-shadow: 1px 1px 2px greenyellow ;
+}
+
+.titulo button:active{
+    background-color:yellowgreen;
+    color: black;
+}
+
 
 footer{
     display: flex;
